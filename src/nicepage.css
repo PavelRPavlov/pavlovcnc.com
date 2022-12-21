@@ -38876,6 +38876,7 @@ a.u-link.u-text-hover-grey-90:hover {
 /*end-variables sitestylecss*/
  .u-header {
   background-image: none;
+  box-shadow: 2px 2px 8px 0px rgba(128,128,128,1);
 }
 
 .u-header .u-sheet-1 {
@@ -38883,8 +38884,10 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-layout-wrap-1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-image: none;
   width: 100%;
-  margin: 0;
 }
 
 .u-header .u-layout-cell-1 {
@@ -38929,6 +38932,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-text-2 {
+  transition-duration: 0.5s;
   margin: 0 auto;
 }
 @media (max-width: 1199px) {
@@ -38938,6 +38942,15 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-header .u-layout-wrap-1 {
     position: relative;
+    width: auto;
+  }
+
+  .u-header .u-layout-cell-1 {
+    min-height: 124px;
+  }
+
+  .u-header .u-layout-cell-2 {
+    min-height: 124px;
   }
 
   .u-header .u-text-1 {
@@ -38947,6 +38960,10 @@ a.u-link.u-text-hover-grey-90:hover {
     margin-right: 19px;
   }
 
+  .u-header .u-layout-cell-3 {
+    min-height: 124px;
+  }
+
   .u-header .u-container-layout-3 {
     padding-left: 11px;
     padding-right: 11px;
@@ -38954,11 +38971,16 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-header .u-text-2 {
     width: auto;
+    animation-timing-function: ease-in-out;
     margin-left: 20px;
     margin-right: 20px;
   }
 }
 @media (max-width: 991px) {
+  .u-header .u-layout-cell-1 {
+    min-height: 95px;
+  }
+
   .u-header .u-container-layout-1 {
     padding-top: 22px;
     padding-bottom: 22px;
@@ -38989,12 +39011,12 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 @media (max-width: 767px) {
-  .u-header .u-layout-wrap-1 {
-    width: 540px;
+  .u-header .u-sheet-1 {
+    min-height: 300px;
   }
 
   .u-header .u-layout-cell-1 {
-    min-height: 115px;
+    min-height: 104px;
   }
 
   .u-header .u-container-layout-1 {
@@ -39002,8 +39024,12 @@ a.u-link.u-text-hover-grey-90:hover {
     padding-right: 10px;
   }
 
+  .u-header .u-image-1 {
+    margin-top: 0;
+  }
+
   .u-header .u-layout-cell-2 {
-    min-height: 20px;
+    min-height: 83px;
   }
 
   .u-header .u-container-layout-2 {
@@ -39018,7 +39044,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-layout-cell-3 {
-    min-height: 15px;
+    min-height: 75px;
   }
 
   .u-header .u-text-2 {
@@ -39031,16 +39057,12 @@ a.u-link.u-text-hover-grey-90:hover {
     min-height: 150px;
   }
 
-  .u-header .u-layout-wrap-1 {
-    width: 340px;
-  }
-
   .u-header .u-layout-cell-1 {
-    min-height: 72px;
+    min-height: 74px;
   }
 
   .u-header .u-layout-cell-2 {
-    min-height: 100px;
+    min-height: 59px;
   }
 
   .u-header .u-text-1 {
@@ -39052,6 +39074,16 @@ a.u-link.u-text-hover-grey-90:hover {
     min-height: 100px;
   }
 }
+.u-header .u-text-2, .u-header .u-text-2:before, .u-header .u-text-2 > .u-container-layout:before {
+    transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position
+}
+.u-header .u-text-2.u-text-2.u-text-2:hover {
+    color: #ff5555 !important
+}
+.u-header .u-text-2.u-text-2.u-text-2.hover {
+    color: #ff5555 !important
+} 
+
  .u-footer {
   background-image: none;
 }
@@ -39084,6 +39116,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-text-2 {
   position: relative;
   font-size: 0.875rem;
+  transition-duration: 0.5s;
   margin: 0 35px 11px 123px;
 }
 
@@ -39108,6 +39141,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-text-4 {
   position: relative;
   font-size: 0.875rem;
+  transition-duration: 0.5s;
   margin: 0 35px 11px 123px;
 }
 
@@ -39132,6 +39166,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-text-6 {
   position: relative;
   font-size: 0.875rem;
+  transition-duration: 0.5s;
   margin: 0 35px 11px 123px;
 }
 @media (max-width: 1199px) {
@@ -39365,6 +39400,32 @@ a.u-link.u-text-hover-grey-90:hover {
     margin-left: 102px;
   }
 }
+.u-footer .u-text-6, .u-footer .u-text-6:before, .u-footer .u-text-6 > .u-container-layout:before {
+    transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position
+}
+.u-footer .u-text-6.u-text-6.u-text-6:hover {
+    color: #ff5555 !important
+}
+.u-footer .u-text-6.u-text-6.u-text-6.hover {
+    color: #ff5555 !important
+} .u-footer .u-text-4, .u-footer .u-text-4:before, .u-footer .u-text-4 > .u-container-layout:before {
+    transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position
+}
+.u-footer .u-text-4.u-text-4.u-text-4:hover {
+    color: #ff5555 !important
+}
+.u-footer .u-text-4.u-text-4.u-text-4.hover {
+    color: #ff5555 !important
+} .u-footer .u-text-2, .u-footer .u-text-2:before, .u-footer .u-text-2 > .u-container-layout:before {
+    transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position
+}
+.u-footer .u-text-2.u-text-2.u-text-2:hover {
+    color: #ff5555 !important
+}
+.u-footer .u-text-2.u-text-2.u-text-2.hover {
+    color: #ff5555 !important
+} 
+
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
