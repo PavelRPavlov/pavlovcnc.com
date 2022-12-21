@@ -25,7 +25,56 @@
     <meta property="og:title" content="Contacts">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-  </head>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeZqJcjAAAAAOsSIJtrP59AHEBfaz2K7jm3Q_MG"></script>
+    <script>
+        (function (grecaptcha, sitekey, actions) {
+            var recaptcha = {
+                execute: function (action, submitFormCb) {
+                    try {
+                        grecaptcha.execute(
+                            sitekey,
+                            {action: action}
+                        ).then(function (token) {
+                            var forms = document.getElementsByTagName('form');
+
+                            for (var i = 0; i < forms.length; i++) {
+                                var fields = forms[i].getElementsByTagName('input');
+
+                                for (var j = 0; j < fields.length; j++) {
+                                    var field = fields[j];
+
+                                    if ('recaptchaResponse' === field.getAttribute('name')) {
+                                        field.setAttribute('value', token);
+                                        break;
+                                    }
+                                }
+                            }
+                            submitFormCb();
+                        });
+                    } catch (e) {
+                        var formError = document.querySelector('.u-form-send-error');
+
+                        if (formError) {
+                            formError.innerText = 'Site Owner Error: ' + e.message.replace(/:[\s\S]*/, '');
+                            formError.style.display = 'block';
+                        }
+                    }
+                },
+
+                executeContact: function (submitFormCb) {
+                    recaptcha.execute(actions['contact'], submitFormCb);
+                }
+            };
+
+            window.recaptchaObject = recaptcha;
+        })(
+            grecaptcha,
+            
+            '6LeZqJcjAAAAAOsSIJtrP59AHEBfaz2K7jm3Q_MG',
+            {'contact': 'contact'}
+        );
+    </script>
+</head>
   <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header" id="sec-d37b" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-xl u-sheet-1">
         <a href="Home.html" class="u-image u-logo u-image-1" data-image-width="96" data-image-height="73" title="Home">
           <img src="images/logo-96.png" class="u-logo-image u-logo-image-1">
@@ -77,7 +126,7 @@
                   <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
                     <div class="u-container-layout u-container-layout-1">
                       <h2 class="u-text u-text-default u-text-grey-70 u-text-1">Искане на оферта</h2>
-                      <ol class="u-text u-text-default u-text-2">
+                      <ol class="u-text u-text-default u-text-grey-70 u-text-2">
                         <li>Въведете име и email за обратна връзка</li>
                         <li>Опишете какво искате да се изработи</li>
                         <li>Прикачете файлове ако е необходимо</li>
@@ -136,6 +185,7 @@
                           <div class="u-form-send-error u-form-send-message">Възникна грешка! Моля, попълнете задължителните полета и изпратете отново.</div>
                           <input type="hidden" value="" name="recaptchaResponse">
                           <input type="hidden" name="formServices" value="6dc620ddde13f6f9abb38a54895eed1a">
+                          <input type="hidden" name="siteKey" value="6LeZqJcjAAAAAOsSIJtrP59AHEBfaz2K7jm3Q_MG">
                         </form>
                       </div>
                     </div>

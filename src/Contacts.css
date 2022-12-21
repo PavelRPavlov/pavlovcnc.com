@@ -138,10 +138,10 @@
 
 .u-section-2 .u-btn-1 {
   border-style: solid;
-  letter-spacing: 0px;
   font-weight: 700;
   text-transform: uppercase;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  padding: 6px;
 }
 
 .u-section-2 .u-icon-1 {
@@ -181,6 +181,10 @@
 
   .u-section-2 .u-form-1 {
     width: 410px;
+  }
+
+  .u-section-2 .u-btn-1 {
+    letter-spacing: normal;
   }
 }
 
