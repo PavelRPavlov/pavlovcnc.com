@@ -420,4 +420,38 @@
   .u-section-3 .u-text-4 {
     font-size: 1.5rem;
   }
+}.text-selection-none{
+user-select: none; /* supported by Chrome and Opera */
+-webkit-user-select: none; /* Safari */
+-khtml-user-select: none; /* Konqueror HTML */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none;
+}
+.text-selection-text{
+user-select: text; /* supported by Chrome and Opera */
+-webkit-user-select: text; /* Safari */
+-khtml-user-select: text; /* Konqueror HTML */
+-moz-user-select: text; /* Firefox */
+-ms-user-select: text;
+}
+.text-selection-all{
+user-select: all; /* supported by Chrome and Opera */
+-webkit-user-select: all; /* Safari */
+-khtml-user-select: all; /* Konqueror HTML */
+-moz-user-select: all; /* Firefox */
+-ms-user-select: all;
+}
+.text-selection-auto{
+user-select: auto; /* supported by Chrome and Opera */
+-webkit-user-select: auto; /* Safari */
+-khtml-user-select: auto; /* Konqueror HTML */
+-moz-user-select: auto; /* Firefox */
+-ms-user-select: auto;
+}
+.text-selection-contain{
+user-select: contain; 
+-webkit-user-select: contain; 
+-khtml-user-select: contain; 
+-moz-user-select: contain; 
+-ms-user-select: element; /*Only IE supports user-select contain option*/
 }
