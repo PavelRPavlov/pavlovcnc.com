@@ -39058,6 +39058,11 @@ a.u-link.u-text-hover-grey-90:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .u-header .u-text-2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (max-width: 575px) {
   .u-header .u-sheet-1 {
