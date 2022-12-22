@@ -106,12 +106,13 @@
 
 .u-section-2 .u-btn-1 {
   font-size: 1rem;
-  border-style: solid;
   text-transform: uppercase;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
   font-weight: 700;
   letter-spacing: normal;
-  margin: 0 auto;
+  transition-duration: 0.5s;
+  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+  margin: 30px auto 0;
   padding: 9px 20px 10px;
 }
 
@@ -158,6 +159,7 @@
   .u-section-2 .u-btn-1 {
     position: relative;
     letter-spacing: 1px;
+    border-style: solid;
     margin-top: 75px;
     margin-bottom: 55px;
   }
@@ -196,7 +198,7 @@
   }
 
   .u-section-2 .u-btn-1 {
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 0;
   }
 }
@@ -248,6 +250,28 @@
   .u-section-2 .u-container-layout-2 {
     padding-left: 7px;
   }
+}
+
+.u-section-2 .u-btn-1,
+.u-section-2 .u-btn-1:before,
+.u-section-2 .u-btn-1 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-2 .u-btn-1.u-btn-1.u-btn-1:hover {
+  transform: scale(1.1) translateX(0px) translateY(0px) !important;
+}
+
+.u-section-2 .u-btn-1.u-btn-1.u-btn-1.hover {
+  transform: scale(1.1) translateX(0px) translateY(0px) !important;
+}
+
+.u-section-2 .u-container-layout:hover .u-btn-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+}
+
+.u-container-layout.hover .u-section-2 .u-btn-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
 } .u-section-3 {
   background-image: none;
 }
@@ -325,8 +349,6 @@
   border-style: solid;
   text-transform: uppercase;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
-  letter-spacing: normal;
-  font-weight: normal;
   padding: 6px;
 }
 
@@ -369,6 +391,11 @@
 
   .u-section-3 .u-form-1 {
     width: 410px;
+  }
+
+  .u-section-3 .u-btn-1 {
+    letter-spacing: normal;
+    font-weight: normal;
   }
 }
 
