@@ -1,0 +1,127 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 201px;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  margin: 0 auto;
+}
+
+.u-section-1 .u-layout-cell-1 {
+  min-height: 15px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 0 auto;
+}
+
+.u-section-1 .u-layout-cell-2 {
+  min-height: 79px;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-1 .u-btn-1 {
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: none;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 430px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    position: relative;
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 12px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 65px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 326px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 312px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 263px;
+  }
+}.text-selection-none{
+user-select: none; /* supported by Chrome and Opera */
+-webkit-user-select: none; /* Safari */
+-khtml-user-select: none; /* Konqueror HTML */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none;
+}
+.text-selection-text{
+user-select: text; /* supported by Chrome and Opera */
+-webkit-user-select: text; /* Safari */
+-khtml-user-select: text; /* Konqueror HTML */
+-moz-user-select: text; /* Firefox */
+-ms-user-select: text;
+}
+.text-selection-all{
+user-select: all; /* supported by Chrome and Opera */
+-webkit-user-select: all; /* Safari */
+-khtml-user-select: all; /* Konqueror HTML */
+-moz-user-select: all; /* Firefox */
+-ms-user-select: all;
+}
+.text-selection-auto{
+user-select: auto; /* supported by Chrome and Opera */
+-webkit-user-select: auto; /* Safari */
+-khtml-user-select: auto; /* Konqueror HTML */
+-moz-user-select: auto; /* Firefox */
+-ms-user-select: auto;
+}
+.text-selection-contain{
+user-select: contain; 
+-webkit-user-select: contain; 
+-khtml-user-select: contain; 
+-moz-user-select: contain; 
+-ms-user-select: element; /*Only IE supports user-select contain option*/
+}
