@@ -28,67 +28,7 @@
 }</script>
     <meta name="theme-color" content="#d5af37">
     <meta property="og:type" content="website">
-  <script>
-    function gdprConfirmed() {
-        return true;
-    }
-    </script>
-    <script>
-    if (gdprConfirmed()) {
-        document.write("<sc" + "ript src=\"https://www.google.com/recaptcha/api.js?render=6Lf6odojAAAAALGm_UP8jFtl0dNNUOe9Dkuwsg3S\"></sc" + "ript>");
-    }
-    </script>
-    <script>
-    if (gdprConfirmed()) {
-        (function (grecaptcha, sitekey, actions) {
-            var recaptcha = {
-                execute: function (action, submitFormCb) {
-                    try {
-                        grecaptcha.execute(
-                            sitekey,
-                            {action: action}
-                        ).then(function (token) {
-                            var forms = document.getElementsByTagName('form');
-
-                            for (var i = 0; i < forms.length; i++) {
-                                var fields = forms[i].getElementsByTagName('input');
-
-                                for (var j = 0; j < fields.length; j++) {
-                                    var field = fields[j];
-
-                                    if ('recaptchaResponse' === field.getAttribute('name')) {
-                                        field.setAttribute('value', token);
-                                        break;
-                                    }
-                                }
-                            }
-                            submitFormCb();
-                        });
-                    } catch (e) {
-                        var formError = document.querySelector('.u-form-send-error');
-
-                        if (formError) {
-                            formError.innerText = 'Site Owner Error: ' + e.message.replace(/:[\s\S]*/, '');
-                            formError.style.display = 'block';
-                        }
-                    }
-                },
-
-                executeContact: function (submitFormCb) {
-                    recaptcha.execute(actions['contact'], submitFormCb);
-                }
-            };
-
-            window.recaptchaObject = recaptcha;
-        })(
-            grecaptcha,
-            
-            '6Lf6odojAAAAALGm_UP8jFtl0dNNUOe9Dkuwsg3S',
-            {'contact': 'contact'}
-        );
-    }
-    </script>
-</head>
+  </head>
   <body class="u-body u-xl-mode" data-lang="en"><header class="text-selection-none u-box-shadow u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-grey-90 u-header u-header" id="sec-d37b" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-sheet-1">
         <div class="u-align-center-sm u-align-center-xs u-clearfix u-expanded-width-sm u-expanded-width-xl u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
