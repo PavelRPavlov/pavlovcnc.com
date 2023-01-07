@@ -10,6 +10,7 @@
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 5.2.4, nicepage.com">
+    <meta name="referrer" content="origin">
     <meta property="og:title" content="PAVLOV CNC">
     <meta property="og:description" content="CNC Услуги">
     <meta property="og:image" content="https://www.pavlovcnc.com/images/logo-850x450.png">
@@ -28,7 +29,67 @@
 }</script>
     <meta name="theme-color" content="#d5af37">
     <meta property="og:type" content="website">
-  </head>
+  <script>
+    function gdprConfirmed() {
+        return true;
+    }
+    </script>
+    <script>
+    if (gdprConfirmed()) {
+        document.write("<sc" + "ript src=\"https://www.google.com/recaptcha/api.js?render=6Lf6odojAAAAALGm_UP8jFtl0dNNUOe9Dkuwsg3S\"></sc" + "ript>");
+    }
+    </script>
+    <script>
+    if (gdprConfirmed()) {
+        (function (grecaptcha, sitekey, actions) {
+            var recaptcha = {
+                execute: function (action, submitFormCb) {
+                    try {
+                        grecaptcha.execute(
+                            sitekey,
+                            {action: action}
+                        ).then(function (token) {
+                            var forms = document.getElementsByTagName('form');
+
+                            for (var i = 0; i < forms.length; i++) {
+                                var fields = forms[i].getElementsByTagName('input');
+
+                                for (var j = 0; j < fields.length; j++) {
+                                    var field = fields[j];
+
+                                    if ('recaptchaResponse' === field.getAttribute('name')) {
+                                        field.setAttribute('value', token);
+                                        break;
+                                    }
+                                }
+                            }
+                            submitFormCb();
+                        });
+                    } catch (e) {
+                        var formError = document.querySelector('.u-form-send-error');
+
+                        if (formError) {
+                            formError.innerText = 'Site Owner Error: ' + e.message.replace(/:[\s\S]*/, '');
+                            formError.style.display = 'block';
+                        }
+                    }
+                },
+
+                executeContact: function (submitFormCb) {
+                    recaptcha.execute(actions['contact'], submitFormCb);
+                }
+            };
+
+            window.recaptchaObject = recaptcha;
+        })(
+            grecaptcha,
+            
+            '6Lf6odojAAAAALGm_UP8jFtl0dNNUOe9Dkuwsg3S',
+            {'contact': 'contact'}
+        );
+    }
+    </script>
+</head>
   <body class="u-body u-xl-mode" data-lang="en"><header class="text-selection-none u-box-shadow u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-grey-90 u-header u-header" id="sec-d37b" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-sheet-1">
         <div class="u-align-center-sm u-align-center-xs u-clearfix u-expanded-width-sm u-expanded-width-xl u-expanded-width-xs u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -225,7 +286,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                     <div class="u-container-layout u-container-layout-2">
                       <h2 class="text-selection-none u-text u-text-4">Форма за контакт</h2>
                       <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
-                        <form action="https://pavlovcnc.azurewebsites.net/api/SendFormFunction?" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 6px;" source="custom" name="form-2">
+                        <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 6px;" source="email" name="form">
                           <div class="u-form-group u-form-name u-label-none">
                             <label for="name-da97" class="u-custom-font u-heading-font u-label u-text-palette-1-base">Име</label>
                             <input type="text" placeholder="Въведете вашето име" id="name-da97" name="name" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-palette-4-base u-radius-6 u-input-1" required="required">
@@ -264,8 +325,10 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                             <input type="submit" value="submit" class="u-form-control-hidden">
                           </div>
                           <div class="u-form-send-message u-form-send-success">Благодарим за запитването! Ще се свържем с вас при първа възможност.</div>
-                          <div class="u-form-send-error u-form-send-message"></div>
+                          <div class="u-form-send-error u-form-send-message">Благодарим за запитването! Ще се свържем с вас при първа възможност.</div>
                           <input type="hidden" value="" name="recaptchaResponse">
+                          <input type="hidden" name="formServices" value="6dc620ddde13f6f9abb38a54895eed1a">
+                          <input type="hidden" name="siteKey" value="6Lf6odojAAAAALGm_UP8jFtl0dNNUOe9Dkuwsg3S">
                         </form>
                       </div>
                     </div>
