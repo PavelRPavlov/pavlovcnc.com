@@ -10,7 +10,6 @@
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 5.2.4, nicepage.com">
-    <meta name="referrer" content="origin">
     <meta property="og:title" content="PAVLOV CNC">
     <meta property="og:description" content="CNC Услуги">
     <meta property="og:image" content="https://www.pavlovcnc.com/images/logo-850x450.png">
@@ -283,24 +282,24 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
               <div class="u-size-30">
                 <div class="u-layout-col">
                   <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-2">
-                    <div class="u-container-layout u-valign-top u-container-layout-2">
+                    <div class="u-container-layout u-container-layout-2">
                       <h2 class="text-selection-none u-text u-text-4">Форма за контакт</h2>
                       <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
-                        <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 6px;" source="email" name="form-2">
+                        <form action="https://pavlovcnc.azurewebsites.net/api/SendFormFunction?code=${{secrets.AZURE_FUNCTIONAPP_SEND_FORM_FUNCTION_KEY}}" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 6px;" source="custom" name="form-2">
                           <div class="u-form-group u-form-name u-label-none">
-                            <label for="name-da97" class="u-label u-text-body-color">Име</label>
+                            <label for="name-da97" class="u-custom-font u-heading-font u-label u-text-palette-1-base">Име</label>
                             <input type="text" placeholder="Въведете вашето име" id="name-da97" name="name" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-palette-4-base u-radius-6 u-input-1" required="required">
                           </div>
                           <div class="u-form-email u-form-group u-label-none">
-                            <label for="email-da97" class="u-label u-text-body-color">Email</label>
+                            <label for="email-da97" class="u-custom-font u-heading-font u-label u-text-palette-1-base">Email</label>
                             <input type="email" placeholder="Въведете e-mail за обратна връзка" id="email-da97" name="email" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-palette-4-base u-radius-6 u-input-2" required="">
                           </div>
                           <div class="u-form-group u-form-message u-label-none">
-                            <label for="message-da97" class="u-label u-text-body-color">Запитване / Съобщение</label>
+                            <label for="message-da97" class="u-custom-font u-heading-font u-label u-text-palette-1-base">Запитване / Съобщение</label>
                             <textarea placeholder="Въведете запитване / съобщение" rows="4" cols="50" id="message-da97" name="message" class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-palette-4-base u-radius-6 u-input-3" required=""></textarea>
                           </div>
                           <div class="u-form-file-upload u-form-group u-label-none u-form-group-4">
-                            <label for="file-upload-4338" class="u-label u-text-body-color">Прикачи файл</label>
+                            <label for="file-upload-4338" class="u-custom-font u-heading-font u-label u-text-palette-1-base">Прикачи файл</label>
                             <div class="u-file-input-wrapper">
                               <a class="u-active-palette-2-light-1 u-border-2 u-border-palette-4-base u-btn u-btn-round u-button-style u-hover-palette-2-base u-none u-radius-6 u-text-hover-white u-text-palette-4-base u-upload-button u-btn-1">Избери файл</a>
                               <div class="u-file-list">
@@ -327,8 +326,6 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                           <div class="u-form-send-message u-form-send-success">Благодарим за запитването! Ще се свържем с вас при първа възможност.</div>
                           <div class="u-form-send-error u-form-send-message">Възникна грешка! Моля, попълнете задължителните полета и изпратете отново.</div>
                           <input type="hidden" value="" name="recaptchaResponse">
-                          <input type="hidden" name="formServices" value="6dc620ddde13f6f9abb38a54895eed1a">
-                          <input type="hidden" name="siteKey" value="6Lf6odojAAAAALGm_UP8jFtl0dNNUOe9Dkuwsg3S">
                         </form>
                       </div>
                     </div>
